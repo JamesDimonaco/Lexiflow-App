@@ -34,10 +34,10 @@ export default function HomePage() {
                 className={cn(
                   "rounded-md px-1 py-0.5 transition-colors",
                   index < currentWordIndex && "text-muted-foreground",
-                  index === currentWordIndex && wordStatus === "correct" && "bg-primary/30",
+                  index === currentWordIndex && wordStatus === "correct" && "bg-green-500/30 text-green-700 dark:text-green-400",
                   index === currentWordIndex &&
                     wordStatus === "incorrect" &&
-                    "bg-destructive/30 text-destructive-foreground",
+                    "bg-primary/30 text-primary-foreground",
                   index > currentWordIndex && "text-foreground",
                 )}
               >
